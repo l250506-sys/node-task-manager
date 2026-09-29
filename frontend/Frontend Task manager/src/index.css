@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+fieldset {
+  border: none;
+}
+
+body{
+  background: linear-gradient(45deg,purple,rgb(174, 0, 255));
+  height: 100vh;
+}
+header{
+  background-color: rgb(156, 97, 97);
+  padding: 10px;
+  text-align: center;
+  box-shadow: rgba(0,0,0,0.5);
+  position: relative;
+}
+header::after{
+  position: absolute;
+  content: "";
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(146, 146, 241);
+  width: 100%;
+}
+.container{
+  background-color: white;
+  width: 80%;
+  margin: 50px auto;
+  padding: 30px 10px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container h2{
+  margin-bottom: 20px;
+  text-align: center;
+}
+.input-form{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.input-form fieldset{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  background-color: rgb(188, 188, 188);
+}
+.input-form fieldset input{
+  flex: 1;
+  padding: 20px 10px;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  border-radius: 20px;
+  background-color: inherit;
+}
+.input-form fieldset button{
+  border: none;
+  outline: none;
+  background-color: orange;
+  border-radius: 20px;
+  padding: 0 20px;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+.input-form fieldset button:hover{
+  background-color: rgb(175, 114, 0);
+  transform: scale(1.05);
+}
+.task-box{
+  background-color: gainsboro;
+  border: solid 2px black;
+  min-height: 300px;
+  width: 90%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap:10px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+.task-box::-webkit-scrollbar {
+  width: 8px;
+}
+.task-box::-webkit-scrollbar-track {
+  background: transparent;
+}
+.task-box::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #c1c9d6, #aab4c3);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.task-box::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #9aa6b2, #7f8c99);
+}
+.single-task{
+  border: 2px solid black;
+  width: 100%;
+  background-color: rgb(208, 174, 174);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 15px;
+}
+.done-del{
+  display: flex;
+  gap:10px;
+}
+.done{
+  background-color: rgb(6, 190, 6);
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.done:hover{
+  background-color: rgb(1, 80, 1);
+  transform: scale(1.05);
+}
+.del{
+  border: none;
+  outline: none;
+  padding: 5px 8px;
+  background-color: rgb(250, 23, 23);
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.del:hover{
+  background-color: rgb(141, 5, 5);
+  transform: scale(1.05);
+}
+.underline p{
+  opacity: 0.5;
+  text-decoration: underline;
+}
